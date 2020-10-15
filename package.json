@@ -1,6 +1,6 @@
 {
-  "name": "kas-npm",
-  "version": "1.0.0",
+  "name": "kas-lock",
+  "version": "0.0.1",
   "description": "A nice greeter",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
