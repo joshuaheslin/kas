@@ -120,7 +120,6 @@ export class KASApi {
       data,
     };
     return axios(options).catch((err) => {
-      console.log('err :>> ', err);
       throw new Error(err.response.data);
     });
   }
