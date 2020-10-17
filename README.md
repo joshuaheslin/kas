@@ -11,7 +11,7 @@ If you would like to see it come alive, contact the repo author with a 'YES'!
 ## Example Usage
 
 ```js
-const KAS = require('kas-lock');
+const { KASApi } = require('kas-lock');
 
 const kas = new KASApi({
   email: process.env.EMAIL,
