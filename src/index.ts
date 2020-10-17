@@ -42,14 +42,14 @@ export class KASApi {
   }
 
   async setClock(factoryName: string) {
-    return await this.request({
+    return this.request({
       url: `/lockCommand/setClock/${factoryName}`,
       method: 'PUT',
     });
   }
 
   async remoteUnlock(factoryName: string) {
-    return await this.request({
+    return this.request({
       url: `/lockCommand/remoteUnlock/${factoryName}/${this.xAuthToken}`,
       method: 'PUT',
     });
@@ -119,6 +119,10 @@ export class KASApi {
       timeout: 0, // no timeout
       data,
     };
-    return axios(options);
+    return axios(options)
+      .catch((err) => {
+        return err.resp
+      }
+      
   }
 }
