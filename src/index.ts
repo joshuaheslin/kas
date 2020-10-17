@@ -63,9 +63,9 @@ export class KASApi {
     return resp.data.l_passwords;
   }
 
-  async getPassword(factoryName: string, password_id: number) {
+  async getPassword(factoryName: string, passwordId: number) {
     const passwords = await this.getPasswords(factoryName);
-    return _.find(passwords, { password_id });
+    return _.find(passwords, { password_id: passwordId });
   }
 
   // async sendPassword(factoryName: string, password_id: number) {
@@ -101,9 +101,9 @@ export class KASApi {
   //   }
   // }
 
-  async deletePassword(factoryName: string, password_id: number) {
+  async deletePassword(factoryName: string, passwordId: number) {
     const resp = await this.request({
-      data: { password_id },
+      data: { password_id: passwordId },
       url: `/lockCommand/remotePassword/${factoryName}`,
       method: 'DELETE',
     });

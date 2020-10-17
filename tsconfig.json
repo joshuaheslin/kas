@@ -7,6 +7,6 @@
     "strict": true,
     "types": ["node"]
   },
-  "include": ["src"],
+  "include": ["src", "dev.js"],
   "exclude": ["node_modules", "**/__tests__/*"]
 }
