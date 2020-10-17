@@ -18,7 +18,7 @@ const kas = new KASApi({
   password: process.env.PASSWORD,
 });
 
-const runCommands = async () => {
+const run = async () => {
   await kas.remoteUnlock('SS00001');
   await kas.setClock('SS00001');
   await kas.addPassword('SS00001', '123456', { startDate: new Date(), endDate: new Date() });
@@ -29,9 +29,9 @@ run();
 
 ## Setup
 
-See console.kas.com.au
-See https://apps.apple.com/au/app/kas-cloud-app/id1451573269
-See https://play.google.com/store/apps/details?id=au.com.kas.lock_app&hl=en_AU
-See https://support.kas.com.au/portal/en-gb/kb/articles/api-doc-console-kas#Change_Log
-See https://support.kas.com.au/portal/en-gb/kb/kas/mobile-app
-Coming soon...
+- See kas.com.au
+- See console.kas.com.au
+- See https://apps.apple.com/au/app/kas-cloud-app/id1451573269
+- See https://play.google.com/store/apps/details?id=au.com.kas.lock_app&hl=en_AU
+- See https://support.kas.com.au/portal/en-gb/kb/articles/api-doc-console-kas#Change_Log
+- See https://support.kas.com.au/portal/en-gb/kb/kas/mobile-app
