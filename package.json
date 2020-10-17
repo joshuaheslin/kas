@@ -18,8 +18,12 @@
   "files": [
     "lib/**/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuaheslin/kas-lock.gits"
+  },
   "keywords": [],
-  "author": "Joshua Heslin",
+  "author": "Joshua Heslin <jbmh@me.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.14",
