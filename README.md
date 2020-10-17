@@ -26,3 +26,12 @@ const runCommands = async () => {
 
 run();
 ```
+
+## Setup
+
+See console.kas.com.au
+See https://apps.apple.com/au/app/kas-cloud-app/id1451573269
+See https://play.google.com/store/apps/details?id=au.com.kas.lock_app&hl=en_AU
+See https://support.kas.com.au/portal/en-gb/kb/articles/api-doc-console-kas#Change_Log
+See https://support.kas.com.au/portal/en-gb/kb/kas/mobile-app
+Coming soon...
