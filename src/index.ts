@@ -119,10 +119,9 @@ export class KASApi {
       timeout: 0, // no timeout
       data,
     };
-    return axios(options)
-      .catch((err) => {
-        return err.resp
-      }
-      
+    return axios(options).catch((err) => {
+      console.log('err :>> ', err);
+      throw new Error(err.response.data);
+    });
   }
 }
